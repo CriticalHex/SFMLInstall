@@ -4,7 +4,8 @@ if not exist %LOCALAPPDATA%\Programs\Git\cmd\git.exe echo Pick all defaults for 
 cd C:%HOMEPATH%
 if not exist C:%HOMEPATH%\vcpkg\vcpkg.exe echo Cloning vcpkg... && %LOCALAPPDATA%\Programs\Git\cmd\git.exe clone https://github.com/microsoft/vcpkg
 cd vcpkg
-if not exist C:%HOMEPATH%\vcpkg\vcpkg.exe echo Wait for bootstrap... && call bootstrap-vcpkg.bat
+if not exist C:%HOMEPATH%\vcpkg\vcpkg.exe call bootstrap-vcpkg.bat
 vcpkg install sfml:x64-windows
 vcpkg integrate install
+del /F /Q C:%HOMEPATH%\Downloads\gitinstall.exe
 PAUSE
