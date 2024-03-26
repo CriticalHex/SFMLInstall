@@ -19,6 +19,18 @@ To set up your development environment, follow these steps:
    - Search for "C++" in the Extensions view search bar.
    - Click on the "Install" button next to the "C++" extension provided by Microsoft.
 
+3. **Run the Script:**
+   - Execute the script from anywhere, you can just double click it.
+
+4. **Add mingw to PATH:**
+   - After it finishes running, you need to add the compiler and related files to the system or local path.
+   - To do so, press `Win` and search `Edit environment variables for your account`.
+   - Open the result. You should see a panel open, with one being titled "User variables for {your username}".
+   - One of the rows in that table is a variable called "Path".
+   - Double click on it. On the right, click "Add".
+   - Paste `C:\mingw64\bin` in the text box that opened. Then click OK until all the windows are closed.
+   - Restart any terminals you have open, as they won't be updated. This includes the VSCode ones.
+  
 ## Compiling Your Program
 
 There are two methods to compile your C++ program:
