@@ -6,7 +6,7 @@ This method is suitable for users who want to compile their code, not for use in
 
 ## vcpkg install
 
-This method utilizes vcpkg to link SFML to your Visual Studio project.
+This method utilizes vcpkg to link SFML to Visual Studio. Does not work for VSCode.
 
 ## Super Hacky Install
 
