@@ -1,5 +1,5 @@
-TARGET = Main.exe
-SRC_FILES = main.cpp
+TARGET = Main.exe # this is where you name the executable.
+SRC_FILES = main.cpp #you list out all the source files for your program here. See the complex project for an example. If they're in folders, you'll need to provide the relative (or absoulte) path.
 
 OBJECTS = $(SRC_FILES:.cpp=.o)
 
